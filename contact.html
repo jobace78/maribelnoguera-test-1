@@ -1,27 +1,23 @@
 ---
 layout: default_style
 permalink: /contact
-published: true
 ---
-<!-- Main Container -->
 
+<!-- Main Container -->
 <div class="container-fluid-kamn">
     <div class="row">
         <div>
             <iframe width="100%" height="450px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="{{ site.google_map }}"></iframe>
+                    src="{{ site.company_address_google_map }}"></iframe>
             <br/>
         </div>
         <div class="container">
             <div class="col-lg-4">
-                <h4>Find us at:</h4>
-
-                <p class="block-author">{{ site.company_name }}</p>
-                <p>{{ site.address_line }}</p>
-                <p>Phone: {{ site.telephone_number }}</p>
-                <p>Fax: {{ site.fax_number }}</p>
-
-                <em class="block-author">Email: {{ site.company_email }}</em> <br>
+                <br>
+                <p>{{ site.company_name }}</p>
+                <p>{{ site.company_address }}</p>
+                <p><a href="tel:{{ site.company_phone }}">{{ site.company_phone }}</a></p>
+                <p><a href="mailto:{{ site.company_email }}">{{ site.company_email }}</a></p>
                 <br>
                 <!-- p class="lead">Social Link</p><hr>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -40,34 +36,30 @@ published: true
             </div>
             <div class="col-lg-8">
                 <div class="feedback-form">
-
                     <div id="contact-response"></div>
-
                     <form action="http://templates.designorbital.com/baleen/contact.php" method="post"
                           id="contact-form">
                         <fieldset>
                             <div class="form-group form-group-fullname">
-                                <label class="control-label" for="fullname">NAME *</label>
+                                <label class="control-label" for="fullname">NOMBRE *</label>
                                 <input type="text" class="form-control" name="fullname" id="fullname"
-                                       placeholder="Enter Your Name">
+                                       placeholder="Introduce tu nombre">
                             </div>
                             <div class="form-group form-group-email">
-                                <label class="control-label" for="email">E-MAIL *</label>
+                                <label class="control-label" for="email">EMAIL *</label>
                                 <input type="text" class="form-control" name="email" id="email"
-                                       placeholder="Enter Your E-Mail">
+                                       placeholder="Introduce tu email">
                             </div>
                             <div class="form-group form-group-message">
-                                <label class="control-label" for="message">MESSAGE *</label>
+                                <label class="control-label" for="message">MENSAJE *</label>
                                 <textarea class="form-control" name="message" id="message" rows="3"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </fieldset>
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<!--End Main Container -->
+<!-- End Main Container -->
